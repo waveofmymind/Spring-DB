@@ -17,7 +17,7 @@ public class MemberServiceV3_3 {
             SQLException {
         bizLogic(fromId, toId, money);
     }
-    @Transactional
+
     private void bizLogic(String fromId, String toId, int money) throws
             SQLException {
         Member fromMember = memberRepository.findById(fromId);
